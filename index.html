@@ -3,127 +3,96 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ChileStreaming BioBio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Poppins', sans-serif;
       background-color: #121212;
-      color: white;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
     }
-
-    header {
-      background-color: #1f1f1f;
-      padding: 20px;
-      text-align: center;
+    .logo {
+      width: 180px;
+      height: auto;
+      margin-bottom: 20px;
     }
-
-    header img {
-      width: 150px;
-    }
-
-    .hero {
-      background: url('banner.jpg') no-repeat center center/cover;
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 36px;
+    h1 {
+      font-size: 2.5rem;
       color: #00bfff;
       margin-bottom: 10px;
     }
-
-    .hero p {
-      font-size: 18px;
-    }
-
-    .platforms {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 40px 0;
-      gap: 20px;
-    }
-
-    .platforms img {
-      width: 100px;
-    }
-
-    .contact {
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      max-width: 500px;
       text-align: center;
-      margin: 30px;
     }
-
-    .contact a {
-      display: inline-block;
+    .platforms {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 600px;
+    }
+    .platform {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .platform:hover {
+      transform: translateY(-5px);
+    }
+    .platform img {
+      width: 50px;
+      margin-bottom: 10px;
+    }
+    .platform span {
+      display: block;
+      font-weight: 600;
+    }
+    .whatsapp-button {
+      margin-top: 30px;
       background-color: #25d366;
       color: white;
       padding: 12px 20px;
-      text-decoration: none;
       border-radius: 30px;
-      font-size: 16px;
       font-weight: bold;
-      margin: 10px;
-    }
-
-    .contact a.instagram {
-      background-color: #e1306c;
-    }
-
-    .whatsapp-float {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 30px;
-      right: 30px;
-      background-color: #25d366;
-      color: white;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      z-index: 100;
-      line-height: 60px;
       text-decoration: none;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1f1f1f;
-      font-size: 14px;
-      color: #aaa;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="ChileStreaming Logo">
-  </header>
-
-  <div class="hero">
-    <h1>¡Bienvenido a ChileStreaming BioBio!</h1>
-    <p>Disfruta tus series y películas favoritas al mejor precio 💥</p>
-  </div>
+  <img src="logo_transparente_corregido.png" alt="ChileStreaming Logo" class="logo" />
+  <h1>¡Bienvenido a ChileStreaming!</h1>
+  <p>Disfruta tus plataformas favoritas a precios accesibles. Conéctate, mira y ahorra.</p>
 
   <div class="platforms">
-    <img src="netflix.png" alt="Netflix">
-    <img src="disney.png" alt="Disney+">
-    <img src="hbomax.png" alt="HBO Max">
-    <img src="starplus.png" alt="Star+">
-    <img src="spotify.png" alt="Spotify">
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
+      <span>Netflix</span>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+" />
+      <span>Disney+</span>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Spotify_logo_without_text.svg" alt="Spotify" />
+      <span>Spotify</span>
+    </div>
+    <div class="platform">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HBO_Max_Logo.svg" alt="HBO Max" />
+      <span>HBO Max</span>
+    </div>
   </div>
 
-  <div class="contact">
-    <a href="https://wa.me/56993529081" target="_blank">💬 WhatsApp</a>
-    <a href="https://instagram.com/chilestreamingbiobio.cl" target="_blank" class="instagram">📷 Instagram</a>
-  </div>
-
-  <a href="https://wa.me/56993529081" class="whatsapp-float" target="_blank">💬</a>
-
-  <footer>
-    © 2025 ChileStreaming BioBio - Todos los derechos reservados
-  </footer>
+  <a class="whatsapp-button" href="https://wa.me/56993529081" target="_blank">💬 Contáctanos por WhatsApp</a>
 </body>
 </html>
