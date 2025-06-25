@@ -1,98 +1,55 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ChileStreaming BioBio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #121212;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
       color: #f0f0f0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 30px 20px;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 10px;
     }
     .logo {
-      width: 180px;
-      height: auto;
-      margin-bottom: 20px;
+      width: 250px;
+      max-width: 80%;
+      margin: 20px auto;
+      display: block;
     }
     h1 {
-      font-size: 2.5rem;
-      color: #00bfff;
-      margin-bottom: 10px;
+      font-size: 2.8rem;
+      margin-top: 20px;
+      background: linear-gradient(90deg, #ff0000, #0000ff);
+      -webkit-background-clip: text;
+      color: transparent;
     }
-    p {
+    .tagline {
+      color: #ccc;
       font-size: 1.2rem;
       margin-bottom: 30px;
-      max-width: 500px;
-      text-align: center;
     }
-    .platforms {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-      gap: 20px;
-      width: 100%;
-      max-width: 600px;
-    }
-    .platform {
-      background: #1f1f1f;
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .platform:hover {
-      transform: translateY(-5px);
-    }
-    .platform img {
-      width: 50px;
-      margin-bottom: 10px;
-    }
-    .platform span {
-      display: block;
-      font-weight: 600;
-    }
-    .whatsapp-button {
-      margin-top: 30px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 30px;
-      font-weight: bold;
+    .btn {
+      display: inline-block;
+      background: #E1306C;
+      color: #fff;
+      padding: 12px 25px;
+      border-radius: 8px;
       text-decoration: none;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #C22E5A;
     }
   </style>
 </head>
 <body>
-  <img src="logo_transparente_corregido.png" alt="ChileStreaming Logo" class="logo" />
-  <h1>¡Bienvenido a ChileStreaming!</h1>
-  <p>Disfruta tus plataformas favoritas a precios accesibles. Conéctate, mira y ahorra.</p>
-
-  <div class="platforms">
-    <div class="platform">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" />
-      <span>Netflix</span>
-    </div>
-    <div class="platform">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Disney%2B_logo.svg" alt="Disney+" />
-      <span>Disney+</span>
-    </div>
-    <div class="platform">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/17/Spotify_logo_without_text.svg" alt="Spotify" />
-      <span>Spotify</span>
-    </div>
-    <div class="platform">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/HBO_Max_Logo.svg" alt="HBO Max" />
-      <span>HBO Max</span>
-    </div>
-  </div>
-
-  <a class="whatsapp-button" href="https://wa.me/56993529081" target="_blank">💬 Contáctanos por WhatsApp</a>
+  <img src="logo_transparente_corregido.png" alt="Logo ChileStreaming BioBio" class="logo">
+  <h1>ChileStreaming BioBio</h1>
+  <p class="tagline">Streaming de calidad para la gente del BioBío</p>
+  <a href="https://instagram.com/chilestreamingbiobio.cl" target="_blank" class="btn">Instagram @chilestreamingbiobio.cl</a>
 </body>
 </html>
