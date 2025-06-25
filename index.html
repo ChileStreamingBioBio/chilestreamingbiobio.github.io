@@ -1,28 +1,129 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ChileStreaming</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ChileStreaming BioBio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #101010;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
       color: white;
+    }
+
+    header {
+      background-color: #1f1f1f;
+      padding: 20px;
       text-align: center;
-      padding: 50px;
     }
-    img {
-      margin-top: 20px;
-      width: 200px;
+
+    header img {
+      width: 150px;
     }
-    h1 { color: #00bfff; }
-    p { font-size: 18px; }
+
+    .hero {
+      background: url('banner.jpg') no-repeat center center/cover;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 36px;
+      color: #00bfff;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    .platforms {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 40px 0;
+      gap: 20px;
+    }
+
+    .platforms img {
+      width: 100px;
+    }
+
+    .contact {
+      text-align: center;
+      margin: 30px;
+    }
+
+    .contact a {
+      display: inline-block;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+      font-weight: bold;
+      margin: 10px;
+    }
+
+    .contact a.instagram {
+      background-color: #e1306c;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 30px;
+      right: 30px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      z-index: 100;
+      line-height: 60px;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1f1f1f;
+      font-size: 14px;
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <h1>¡Bienvenido a ChileStreaming!</h1>
-  <p>Tu sitio está funcionando correctamente 🎉</p>
-  <img src="logo.png" alt="Logo de ChileStreaming">
+  <header>
+    <img src="logo.png" alt="ChileStreaming Logo">
+  </header>
+
+  <div class="hero">
+    <h1>¡Bienvenido a ChileStreaming BioBio!</h1>
+    <p>Disfruta tus series y películas favoritas al mejor precio 💥</p>
+  </div>
+
+  <div class="platforms">
+    <img src="netflix.png" alt="Netflix">
+    <img src="disney.png" alt="Disney+">
+    <img src="hbomax.png" alt="HBO Max">
+    <img src="starplus.png" alt="Star+">
+    <img src="spotify.png" alt="Spotify">
+  </div>
+
+  <div class="contact">
+    <a href="https://wa.me/56993529081" target="_blank">💬 WhatsApp</a>
+    <a href="https://instagram.com/chilestreamingbiobio.cl" target="_blank" class="instagram">📷 Instagram</a>
+  </div>
+
+  <a href="https://wa.me/56993529081" class="whatsapp-float" target="_blank">💬</a>
+
+  <footer>
+    © 2025 ChileStreaming BioBio - Todos los derechos reservados
+  </footer>
 </body>
 </html>
